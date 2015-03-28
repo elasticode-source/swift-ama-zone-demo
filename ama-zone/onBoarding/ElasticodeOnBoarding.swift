@@ -59,11 +59,10 @@ class ElasticodeOnBoarding: NSObject {
 //        screens = template9()
 //        screens = template10()
 //        screens = template11()
-        let act:NSMutableArray = NSMutableArray()
-        act.addObject(ECOnBoardingAction .createWithName("Show video", action: showVideo))
+        let moreActions:NSMutableArray = NSMutableArray()
+        moreActions.addObject(ECOnBoardingAction .createWithName("Show video", action: showVideo))
         var onboardingVC:ECOnboardingViewController =
-        ElastiCode.createOnBoardingWithScreens(screens, withVersion: onBoardingVersionString, completionHandler: {
-            }, additionalActions: act)
+        ElastiCode.createOnBoardingWithScreens(screens, withVersion: onBoardingVersionString, completionHandler: handleOnboardingCompletion, additionalActions: moreActions)
         
         onboardingVC.fadePageControlOnLastPage = true;
         onboardingVC.view.backgroundColor = UIColor(red: 0.684, green: 0.828, blue: 0.827, alpha: 1)
@@ -100,7 +99,7 @@ class ElasticodeOnBoarding: NSObject {
         screen1.ctaButton.show = true
         screen1.ctaButton.type = CTAButtonType.withText_facebook
         screen1.image.setImageNameForIPhone4("", forIPhone5: "", forIPhone6: "", forIPhone6Plus: "")
-        screen1.ctaButton.actionObject = ECOnBoardingAction .createWithName("Continue", action: { () -> Void in self.handleOnboardingCompletion() })
+        screen1.ctaButton.actionObject = ECOnBoardingAction .createWithName("Continue", action: { self.handleOnboardingCompletion() })
         return NSArray(object: screen1)
     }
     func template3() -> (NSArray)
@@ -136,7 +135,7 @@ class ElasticodeOnBoarding: NSObject {
         screen1.ctaButton2.type = CTAButtonType.withText_google
         screen1.ctaButton3.show = false
         screen1.backgroundColor = UIColor(red:1.000, green:0.976, blue:0.976, alpha:1)
-        screen1.ctaButton.actionObject = ECOnBoardingAction .createWithName("Continue", action: { () -> Void in self.handleOnboardingCompletion() })
+        screen1.ctaButton.actionObject = ECOnBoardingAction .createWithName("Continue", action: handleOnboardingCompletion)
         return NSArray(object: screen1)
     }
     func template5() -> (NSArray)
@@ -158,7 +157,7 @@ class ElasticodeOnBoarding: NSObject {
         screen1.ctaButton3.fontName = "HelveticaNeue-light"
         screen1.image.setImageNameForIPhone4("", forIPhone5: "", forIPhone6: "ScreenDeals_clean.jpg", forIPhone6Plus: "")
         screen1.ctaButton3.actionObject = ECOnBoardingAction .createWithName("Continue", action: handleOnboardingCompletion)
-        return NSArray(object: screen1)
+        return [screen1]
     }
     func template6() -> (NSArray)
     {

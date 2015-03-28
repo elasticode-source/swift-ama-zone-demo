@@ -20,7 +20,7 @@
 		F1C3F68E1AC0D0CA00726522 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1C3F68D1AC0D0CA00726522 /* SystemConfiguration.framework */; };
 		F1C3F6951AC0D26400726522 /* ElasticodeOnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C3F6941AC0D26400726522 /* ElasticodeOnBoarding.swift */; };
 		F1C3F6971AC0D76500726522 /* ECSplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C3F6961AC0D76500726522 /* ECSplashScreen.swift */; };
-		F1C3F6A01AC13A4900726522 /* MONActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C3F69F1AC13A4900726522 /* MONActivityIndicatorView.m */; };
+		F1C3F6A41AC1B5BD00726522 /* MONActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C3F6A31AC1B5BD00726522 /* MONActivityIndicatorView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +52,8 @@
 		F1C3F68F1AC0D10200726522 /* ama-zone-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ama-zone-Bridging-Header.h"; sourceTree = "<group>"; };
 		F1C3F6941AC0D26400726522 /* ElasticodeOnBoarding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ElasticodeOnBoarding.swift; path = onBoarding/ElasticodeOnBoarding.swift; sourceTree = "<group>"; };
 		F1C3F6961AC0D76500726522 /* ECSplashScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ECSplashScreen.swift; path = onBoarding/ECSplashScreen.swift; sourceTree = "<group>"; };
-		F1C3F69E1AC13A4900726522 /* MONActivityIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MONActivityIndicatorView.h; sourceTree = "<group>"; };
-		F1C3F69F1AC13A4900726522 /* MONActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MONActivityIndicatorView.m; sourceTree = "<group>"; };
+		F1C3F6A21AC1B5BD00726522 /* MONActivityIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MONActivityIndicatorView.h; path = onBoarding/MONActivityIndicatorView.h; sourceTree = "<group>"; };
+		F1C3F6A31AC1B5BD00726522 /* MONActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MONActivityIndicatorView.m; path = onBoarding/MONActivityIndicatorView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,8 +145,8 @@
 			isa = PBXGroup;
 			children = (
 				F1C3F6941AC0D26400726522 /* ElasticodeOnBoarding.swift */,
-				F1C3F69E1AC13A4900726522 /* MONActivityIndicatorView.h */,
-				F1C3F69F1AC13A4900726522 /* MONActivityIndicatorView.m */,
+				F1C3F6A21AC1B5BD00726522 /* MONActivityIndicatorView.h */,
+				F1C3F6A31AC1B5BD00726522 /* MONActivityIndicatorView.m */,
 				F1C3F6961AC0D76500726522 /* ECSplashScreen.swift */,
 			);
 			name = onBoarding;
@@ -253,7 +253,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1C3F6A01AC13A4900726522 /* MONActivityIndicatorView.m in Sources */,
+				F1C3F6A41AC1B5BD00726522 /* MONActivityIndicatorView.m in Sources */,
 				F1C3F6951AC0D26400726522 /* ElasticodeOnBoarding.swift in Sources */,
 				F1C3F6681AC0D06B00726522 /* ViewController.swift in Sources */,
 				F1C3F6971AC0D76500726522 /* ECSplashScreen.swift in Sources */,
@@ -464,6 +464,7 @@
 				F1C3F6811AC0D06B00726522 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F1C3F6821AC0D06B00726522 /* Build configuration list for PBXNativeTarget "ama-zoneTests" */ = {
 			isa = XCConfigurationList;
@@ -472,6 +473,7 @@
 				F1C3F6841AC0D06B00726522 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

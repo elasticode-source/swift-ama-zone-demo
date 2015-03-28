@@ -6,12 +6,12 @@
     },
     {
       "idiom" : "universal",
-      "scale" : "2x"
+      "scale" : "2x",
+      "filename" : "ScreenDeals_clean6@2x.jpg"
     },
     {
       "idiom" : "universal",
-      "scale" : "3x",
-      "filename" : "signUp.jpg"
+      "scale" : "3x"
     }
   ],
   "info" : {
